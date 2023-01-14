@@ -206,6 +206,7 @@
     line-height: 37px;
     color: #de8730;
     text-decoration: underline;
+     white-space: nowrap;
 }
 .product-type-tab-active{
     font-weight: 500;
@@ -423,6 +424,19 @@
     }
 }
 
+@media (max-width: 768px) {
+    .welcome-content-title{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 41px;
+    }
+    .welcome-content-desc{
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 24px;
+    }
+}
+
 @media (max-width: 610px) {
     .discount-container{
     margin-top: 350px;
@@ -433,5 +447,22 @@
     }
     .discount-video img{
         width: 100%;
+    }
+    .info-item{
+        height: auto;
+        flex-direction: column;
+        padding: 46px;
+    }
+    .product-type-tabs{
+        max-width: 100%;
+        overflow-y: scroll;
+    }
+    
+}
+
+
+@media (max-width: 517px) {
+    .welcome-content{
+        padding-top: 13vh;
     }
 }
