@@ -92,3 +92,39 @@
     outline: none;
     margin-right: 20px;
 }
+
+.header-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    display: none;
+}
+.header-menu div{
+    width: 30px;
+    height: 4px;
+    background: #FFFFFF;
+}
+
+@media (max-width: 1015px) {
+    .header-nav{
+        display: none;
+    }
+    .header-btns{
+        justify-content: flex-end;
+    }
+    .header-menu{
+        display: flex;
+    }
+}
+
+@media (max-width: 770px) {
+    .header-btns_signin, .header-btns_signup{
+        display: none;
+    }
+    .header-logo{
+        width: 200px;
+    }
+    .header-btns_search{
+        margin-right: 0;
+    }
+}

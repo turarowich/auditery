@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
 *{
     font-family: 'Ubuntu';
 }
@@ -452,6 +453,7 @@
         height: auto;
         flex-direction: column;
         padding: 46px;
+        text-align: center;
     }
     .product-type-tabs{
         max-width: 100%;
